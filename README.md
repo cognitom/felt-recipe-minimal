@@ -22,7 +22,7 @@ const
   flavor = { src: 'public', watch: true, debug: true }
 
 app.use(felt(recipe, flavor))
-app.use(express.static('words'))
+app.use(express.static('public'))
 app.listen(3000)
 ```
 
@@ -31,5 +31,5 @@ app.listen(3000)
 Felt CLI will come soon. (but not yet)
 
 ```bash
-$ felt --recipe minimal --src public --watch --debug
+$ felt --recipe minimal --src public --watch
 ```
