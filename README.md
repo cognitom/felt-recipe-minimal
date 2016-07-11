@@ -8,8 +8,6 @@ $ npm install felt-recipe-minimal
 
 ## Usage via Express
 
-At least you have to overwrite `src`.
-
 ```javascript
 'use strict'
 const
@@ -19,7 +17,7 @@ const
 
 const
   app = express(),
-  flavor = { src: 'public', watch: true, debug: true }
+  flavor = { src: 'public', watch: true }
 
 app.use(felt(recipe, flavor))
 app.use(express.static('public'))
