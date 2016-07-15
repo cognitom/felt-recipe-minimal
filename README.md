@@ -6,6 +6,12 @@ This is a minimal recipe for [Felt](https://github.com/cognitom/felt).
 $ npm install felt-recipe-minimal
 ```
 
+## Usage via CLI
+
+```bash
+$ felt --recipe minimal --src public
+```
+
 ## Usage via Express
 
 ```javascript
@@ -17,17 +23,9 @@ const
 
 const
   app = express(),
-  flavor = { src: 'public', watch: true }
+  flavor = { src: 'public' }
 
 app.use(felt(recipe, flavor))
 app.use(express.static('public'))
 app.listen(3000)
-```
-
-## Usage via CLI
-
-Felt CLI will come soon. (but not yet)
-
-```bash
-$ felt --recipe minimal --src public --watch
 ```
