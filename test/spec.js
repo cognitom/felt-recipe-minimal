@@ -9,7 +9,7 @@ const
   configBuilder = require('felt/lib/config-builder'),
   config = require('../felt.config.js')
 
-describe('felt-rollup', () => {
+describe('felt-recipe-minimal', () => {
   let server
   const port = 3333, root = __dirname
 
