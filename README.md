@@ -1,5 +1,7 @@
 # felt-recipe-minimal
 
+[![Build Status][travis-image]][travis-url]
+
 This is a minimal recipe for [Felt](https://github.com/cognitom/felt).
 
 ```bash
@@ -29,3 +31,6 @@ app.use(felt(recipe, flavor))
 app.use(express.static('public'))
 app.listen(3000)
 ```
+
+[travis-image]:https://img.shields.io/travis/cognitom/felt-recipe-minimal.svg?style=flat-square
+[travis-url]:https://travis-ci.org/cognitom/felt-recipe-minimal
