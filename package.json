@@ -1,6 +1,6 @@
 {
   "name": "felt-recipe-minimal",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Minimal recipe for Felt",
   "main": "felt.config.js",
   "files": [
