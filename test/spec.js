@@ -7,14 +7,14 @@ const
   path = require('path'),
   felt = require('felt/lib/server'),
   configBuilder = require('felt/lib/config-builder'),
-  config = require('../felt.config.js')
+  recipe = require('../felt.config.js')
 
 describe('felt-recipe-minimal', () => {
   let server
   const port = 3333, root = __dirname
 
   before(co.wrap(function* () {
-    const opts = configBuilder(config, { src: 'fixture', port, root })
+    const opts = configBuilder(recipe, { src: 'fixture', port, root })
     server = yield felt(opts)
   }))
 
